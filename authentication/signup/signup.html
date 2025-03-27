@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./signup-styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Section (Illustration) -->
+      <div class="left-section">
+        <img src="../assets/images/signup.png" alt="Register Illustration" />
+      </div>
+
+      <!-- Right Section (Registration Form) -->
+      <div class="right-section">
+        <h2>Registration</h2>
+        <form class="register-form">
+          <div class="input-group">
+            <input
+              type="text"
+              id="full-name"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+              minlength="6"
+            />
+          </div>
+          <div class="input-group">
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Phone Number"
+              required
+              minlength="11"
+            />
+          </div>
+          <div class="password-group">
+            <div class="input-group">
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="Confirm Password"
+                required
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+
+        <p class="login-text">
+          Already have an account? <a href="../login/login.html">Login</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
