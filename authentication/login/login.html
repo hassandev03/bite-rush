@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./login-styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Section -->
+      <div class="left-section">
+        <img src="../assets/images/login.png" alt="Login Illustration" />
+      </div>
+
+      <!-- Right Section (Login Form) -->
+      <div class="right-section">
+        <h2>Welcome Back!</h2>
+        <form class="login-form">
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+              minlength="6"
+            />
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+
+        <p class="or-text">Or</p>
+        <button class="google-btn">
+          <img src="../assets/images/google-logo.png" alt="Google" /> Continue
+          with Google
+        </button>
+
+        <p class="signup-text">
+          Don't have an account? <a href="../signup/signup.html">Sign Up</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
