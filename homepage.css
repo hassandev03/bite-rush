@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Nunito, sans-serif;
+    font-family: Montserrat, sans-serif;
     background-color: #fff;
 }
 body,html{
@@ -90,7 +90,7 @@ h1 {
     justify-content: space-between;
     padding: 50px;
     background-color: #fff;
-    font-family: Nunito, sans-serif;
+    font-family: Montserrat, sans-serif;
 }
 
 .card1 {
@@ -109,7 +109,6 @@ h1 {
     color: #666;
     margin: 20px 0;
 }
-
 
 .order-btn {
     background-color: #f03328;
@@ -180,5 +179,39 @@ h1 {
 .profile p {
     font-size: 14px;
     color: #333;
+}
+
+.quality {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 10%;
+}
+
+.quality-card {
+    text-align: center;
+    width: 20%;
+}
+
+.quality-card img {
+    width: 80px;
+    height: 80px;
+}
+
+.quality-card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.quality-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+.quality-card .red {
+    color: red;
 }
 
