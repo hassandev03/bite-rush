@@ -3,6 +3,7 @@
 /* General Styles */
 body {
   font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
   background-color: #fff9e6;
   display: flex;
   justify-content: center;
