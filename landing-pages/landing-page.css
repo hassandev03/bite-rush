@@ -222,7 +222,6 @@ h1 {
 
 .choose-us {
   padding: 50px 0;
-  background: linear-gradient(to right, #fff, #fdf6f0);
 }
 
 .choose-us-container {
@@ -254,7 +253,6 @@ h1 {
 .choose-us-card {
   display: flex;
   align-items: center;
-  /* background: #fff; */
   padding: 15px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -345,4 +343,13 @@ footer {
   margin: 0 10px;
   text-decoration: none;
   color: black;
+}
+.choose-us-image, 
+.main-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.choose-us-image:hover, 
+.main-img:hover {
+  transform: scale(1.05);
 }
