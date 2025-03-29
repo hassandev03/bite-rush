@@ -159,16 +159,6 @@ h1 {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.location {
-  position: absolute;
-  bottom: 20px;
-  right: -50px;
-  background: white;
-  padding: 10px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .profile {
   display: flex;
   align-items: center;
