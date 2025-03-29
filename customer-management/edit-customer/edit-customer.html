@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edit Customer</title>
-    <link rel="stylesheet" href="./edit-customer.css" />
+    <title>Customers</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="container">
@@ -26,45 +26,75 @@
           </li>
         </ul>
       </aside>
-
       <main class="main-content">
         <div class="customer-card">
-          <h2>Edit Customer</h2>
-          <div class="profile-pic">
-            <img
-              id="profile-img"
-              src="../../assets/images/dummy-profile-pic.webp"
-              alt="Profile"
-            />
-            <input type="file" id="file-input" accept="image/*" />
-            <label for="file-input">Upload Image</label>
-          </div>
-
-          <form class="customer-form">
-            <div class="form-row">
-              <div class="form-group">
-                <label>Full Name</label>
-                <input type="text" placeholder="Customer Name" />
-              </div>
-              <div class="form-group">
-                <label>Email</label>
-                <input type="email" placeholder="xyz@mail.com" />
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label>Password</label>
-                <input type="password" placeholder="Password" />
-              </div>
-              <div class="form-group">
-                <label>Phone No.</label>
-                <input type="text" placeholder="03xx-xxxxxxx" class="spent" />
-              </div>
-            </div>
-
-            <button type="submit" class="save-btn">Save Changes</button>
-          </form>
+          <h2>Customers</h2>
+          <button class="add-btn">+ Add Customers</button>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Orders</th>
+                <th>Spent ($)</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="../../assets/images/profile1.jpg"
+                    class="profile-img"
+                  />
+                  Addie Minstra
+                </td>
+                <td>250</td>
+                <td class="highlight">$3500</td>
+                <td>Male</td>
+                <td>2603 Jadewood Drive</td>
+                <td>
+                  <span class="edit">Edit</span>
+                  <span class="delete">Delete</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="../../assets/images/profile2.jpg"
+                    class="profile-img"
+                  />
+                  Manuel Labor
+                </td>
+                <td>300</td>
+                <td class="highlight">$4800</td>
+                <td>Male</td>
+                <td>3799 Glendale Avenue</td>
+                <td>
+                  <span class="edit">Edit</span>
+                  <span class="delete">Delete</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="../../assets/images/profile3.jpg"
+                    class="profile-img"
+                  />
+                  Jack Armanda
+                </td>
+                <td>260</td>
+                <td class="highlight">$2800</td>
+                <td>Male</td>
+                <td>8270 Wildwood Street</td>
+                <td>
+                  <span class="edit">Edit</span>
+                  <span class="delete">Delete</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </main>
     </div>
