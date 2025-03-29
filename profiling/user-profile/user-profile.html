@@ -1,65 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Profile</title>
-    <link rel="stylesheet" href="../profiling.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../profiling.css" />
+  </head>
+  <body>
     <div class="container">
-        <aside class="sidebar">
-            <div class="logo">
-                <img src="../../assets/images/bite-rush-logo.jpg" alt="Logo">
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="../../assets/images/bite-rush-logo.jpg" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#"><img src="../../assets/icons/home.png" alt="Home" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="../../assets/icons/order.png" alt="Orders"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="../../assets/icons/profile.png" alt="Profile"
+            /></a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="main-content">
+        <div class="user-card">
+          <h2>Personal Profile</h2>
+
+          <div class="profile-pic">
+            <img
+              id="profile-img"
+              src="../../assets/images/dummy-profile-pic.webp"
+              alt="Profile"
+            />
+            <input type="file" id="file-input" accept="image/*" />
+            <label for="file-input">Upload Image</label>
+          </div>
+
+          <form class="user-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="xyz@gmail.com" />
+              </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#"><img src="../../assets/icons/home.png" alt="Home"></a></li>
-                <li><a href="#"><img src="../../assets/icons/order.png" alt="Orders"></a></li>
-                <li><a href="#"><img src="../../assets/icons/profile.png" alt="Profile"></a></li>
-            </ul>
-        </aside>
 
-        <main class="main-content">
-            <div class="user-card">
-                <h2>Personal Profile</h2>
-
-                <div class="profile-pic">
-                    <img id="profile-img" src="../../assets/images/dummy-profile-pic.webp" alt="Profile">
-                    <input type="file" id="file-input" accept="image/*">
-                    <label for="file-input">Upload Image</label>
-                </div>
-
-                <form class="user-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Full Name</label>
-                            <input type="text" placeholder="Your name">
-                        </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" placeholder="xyz@gmail.com">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" placeholder="Password"/>
-                        </div>
-                        <div class="form-group">
-                            <label>Phone No.</label>
-                            <input type="text" placeholder="03xx-xxxxxxx"  class="spent">
-                        </div>
-                    </div>
-
-
-                    <button type="submit" class="save-btn">Save Changes</button>
-                </form>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="Password" />
+              </div>
+              <div class="form-group">
+                <label>Phone No.</label>
+                <input type="text" placeholder="03xx-xxxxxxx" class="spent" />
+              </div>
             </div>
-        </main>
+
+            <button type="submit" class="save-btn">Save Changes</button>
+          </form>
+        </div>
+      </main>
     </div>
-
-</body>
+  </body>
 </html>
-
