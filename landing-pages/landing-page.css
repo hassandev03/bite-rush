@@ -6,11 +6,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: #fff9e6;
 }
 
 body,
 html {
+  background-color: #fff9e6;
   padding: 0;
   margin: 0;
 }
@@ -123,6 +123,7 @@ h1 {
   border-radius: 8px;
   padding: 10px 20px;
   cursor: pointer;
+  margin-top: 1em;
 }
 
 .order-btn:hover {
@@ -198,8 +199,15 @@ h1 {
   text-align: center;
   width: 20%;
   border-radius: 24px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) ;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 2rem;
+  background-color: #fdfbf4;
+  transition: all 0.3s ease-in-out;
+}
+
+.quality-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .quality-card img {
@@ -217,7 +225,6 @@ h1 {
   font-size: 14px;
   color: #666;
 }
-
 
 .quality-card .red {
   color: red;
@@ -244,7 +251,6 @@ h1 {
 
 .choose-us-content {
   width: 50%;
-  
 }
 
 .choose-us h2 {
@@ -262,37 +268,40 @@ h1 {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
   gap: 15px;
-  background-color: #ffffff;
+  background-color: #fdfbf4;
+  transition: all 0.3s ease-in-out;
+}
+
+.choose-us-card:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .choose-us-card img {
   width: 40px;
   height: 40px;
-  background-color: #ffffff;
 }
 
 .choose-us-card h3 {
   font-size: 18px;
   font-weight: bold;
   color: #222;
-  background-color: #ffffff;
 }
 
 .choose-us-card p {
   font-size: 14px;
   color: #555;
   margin-top: 5px;
-  background-color: #ffffff;
 }
-
 
 .newsletter {
   padding: 20px;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
+  max-width: 50vw;
   margin: 20px auto;
+  background-color: #fdfbf4;
 }
 
 .newsletter h2 {
@@ -301,7 +310,7 @@ h1 {
 }
 
 .newsletter h2 span {
-  color:#ff901c ;
+  color: #ff901c;
 }
 
 .newsletter p {
@@ -311,13 +320,13 @@ h1 {
 
 .newsletter-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 10px;
 }
 
 .newsletter-box input {
   padding: 10px;
-  width: 250px;
+  width: 67%;
   border: 1px solid #ccc;
   border-radius: 5px 0 0 5px;
   outline: none;
@@ -330,6 +339,12 @@ h1 {
   padding: 10px 15px;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
+  width: 16%;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #e66900;
 }
 
 footer {
@@ -352,12 +367,12 @@ footer {
   text-decoration: none;
   color: black;
 }
-.choose-us-image, 
+.choose-us-image,
 .main-img {
   transition: transform 0.3s ease-in-out;
 }
 
-.choose-us-image:hover, 
+.choose-us-image:hover,
 .main-img:hover {
   transform: scale(1.05);
 }
