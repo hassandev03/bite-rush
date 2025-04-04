@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Profile</title>
-    <link rel="stylesheet" href="../profiling.css" />
+    <title>Add Customer</title>
+    <link rel="stylesheet" href="../customer-styles.css" />
   </head>
   <body>
     <div class="container">
@@ -14,25 +14,40 @@
         </div>
         <ul class="nav-links">
           <li>
-            <a href="#"><img src="../../assets/icons/home.png" alt="Home" /></a>
-          </li>
-          <li>
             <a href="#"
-              ><img src="../../assets/icons/order.png" alt="Orders"
+              ><img src="../../assets/icons/dashboard.png" alt="Dashboard"
             /></a>
           </li>
           <li>
             <a href="#"
-              ><img src="../../assets/icons/profile.png" alt="Profile"
+              ><img
+                src="../../assets/icons/user-management.png"
+                alt="User Management"
+                onclick="window.location.href='../customer-view/customer-view.html'"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../../assets/icons/product-management.png"
+                alt="Product Management"
+                onclick="window.location.href='../../product-management/products-listing/product-listing.html'"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../../assets/icons/profile.png"
+                alt="Profile"
+                onclick="window.location.href='../../profiling/admin-profile/admin-profile.html'"
             /></a>
           </li>
         </ul>
       </aside>
 
       <main class="main-content">
-        <div class="user-card">
-          <h2>Personal Profile</h2>
-
+        <div class="customer-card">
+          <h2>Add Customer</h2>
           <div class="profile-pic">
             <img
               id="profile-img"
@@ -43,15 +58,15 @@
             <label for="file-input">Upload Image</label>
           </div>
 
-          <form class="user-form">
+          <form class="customer-form">
             <div class="form-row">
               <div class="form-group">
                 <label>Full Name</label>
-                <input type="text" placeholder="Your name" />
+                <input type="text" placeholder="Customer Name" />
               </div>
               <div class="form-group">
                 <label>Email</label>
-                <input type="email" placeholder="xyz@gmail.com" />
+                <input type="email" placeholder="xyz@mail.com" />
               </div>
             </div>
 

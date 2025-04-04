@@ -75,7 +75,7 @@ body {
 }
 
 
-.user-card {
+.customer-card {
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -89,6 +89,9 @@ body {
     overflow: hidden;
 }
 
+.customer-card > h2 {
+    font-size: 1.75em;
+}
 
 .profile-pic {
     display: flex;
@@ -96,6 +99,11 @@ body {
     align-items: center;
     width: 40%;
     margin-bottom: 20px;
+    margin-top: 1em;
+}
+
+.customer-card h1 {
+    font-size: 1.5em;
 }
 
 .profile-pic img {
@@ -126,7 +134,8 @@ body {
     background-color: #e66900;
 }
 
-.user-form {
+.customer-form {
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -158,6 +167,7 @@ body {
     border-radius: 5px;
     outline: none;
 }
+
 
 .save-btn {
     background-color: #ff7f0e;

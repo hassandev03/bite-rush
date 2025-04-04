@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Management</title>
+    <link rel="stylesheet" href="./product-listing.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="../../assets/images/bite-rush-logo.jpg" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#"
+              ><img src="../../assets/icons/dashboard.png" alt="Home"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../../assets/icons/user-management.png"
+                alt="Orders"
+                onclick="window.location.href='../../customer-management/customer-view/customer-view.html'"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../../assets/icons/product-management.png"
+                alt="Orders"
+                onclick="window.location.href='../products-listing/product-listing.html'"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../../assets/icons/profile.png"
+                alt="profile"
+                onclick="window.location.href='../../profiling/admin-profile/admin-profile.html'"
+            /></a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="main-content">
+        <div class="products-table-card">
+          <div class="header">
+            <h1>Products</h1>
+            <button class="add-btn" onclick="window.open('../add-product/add-product.html')">Add Product</button>
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="name-cell">
+                      <img
+                        src="../assets/images/grilled-burger.jpg"
+                        alt="Grilled Burger"
+                        class="product-img"
+                      />
+                      <p>Grilled Burger</p>
+                    </div>
+                  </td>
+                  <td>Rs. 850</td>
+                  <td>
+                    <div class="action-cell">
+                      <button
+                        class="edit-btn"
+                        onclick="window.open('../edit-product/edit-product.html')"
+                      >
+                        Edit
+                      </button>
+                      <button class="delete-btn">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="name-cell">
+                      <img
+                        src="../assets/images/pizza.webp"
+                        alt="Special Pizza"
+                        class="product-img"
+                      />
+                      <p>Special Pizza</p>
+                    </div>
+                  </td>
+                  <td>Rs. 2800</td>
+                  <td>
+                    <div class="action-cell">
+                      <button
+                        class="edit-btn"
+                        onclick="window.open('../edit-product/edit-product.html')"
+                      >
+                        Edit
+                      </button>
+                      <button class="delete-btn">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="name-cell">
+                      <img
+                        src="../assets/images/sushi.webp"
+                        alt="Sushi"
+                        class="product-img"
+                      />
+                      <p>Sushi</p>
+                    </div>
+                  </td>
+                  <td>Rs. 1260</td>
+                  <td>
+                    <div class="action-cell">
+                      <button
+                        class="edit-btn"
+                        onclick="window.open('../edit-product/edit-product.html')"
+                      >
+                        Edit
+                      </button>
+                      <button class="delete-btn">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="name-cell">
+                      <img
+                        src="../assets/images/sandwich.jpg"
+                        alt="Cheese Sandwiches"
+                        class="product-img"
+                      />
+                      <p>Cheese Sandwiches</p>
+                    </div>
+                  </td>
+                  <td>Rs. 550</td>
+                  <td>
+                    <div class="action-cell">
+                      <button
+                        class="edit-btn"
+                        onclick="window.open('../edit-product/edit-product.html')"
+                      >
+                        Edit
+                      </button>
+                      <button class="delete-btn">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

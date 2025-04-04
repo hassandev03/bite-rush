@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Management</title>
+    <link rel="stylesheet" href="customer-view.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="../../assets/images/bite-rush-logo.jpg" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#"
+              ><img src="../../assets/icons/dashboard.png" alt="Dashboard"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../../assets/icons/user-management.png"
+                alt="User Management"
+                onclick="window.location.href='../customer-view/customer-view.html'"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../../assets/icons/product-management.png"
+                alt="Product Management"
+                onclick="window.location.href='../../product-management/products-listing/product-listing.html'"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../../assets/icons/profile.png"
+                alt="Profile"
+                onclick="window.location.href='../../profiling/admin-profile/admin-profile.html'"
+            /></a>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="main-content">
+        <div class="customers-table-card">
+          <div class="header">
+            <h1>Customers</h1>
+            <button class="add-btn" onclick="window.open('../add-customer/add-customer.html')">Add Customer</button>
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Orders</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="name-cell">
+                      <img
+                        src="../assets/images/customer-1.jpg"
+                        alt="Addie Minstra"
+                        class="customer-img"
+                      />
+                      <p>Addie Minstra</p>
+                    </div>
+                  </td>
+                  <td>250</td>
+                  <td>
+                    <div class="action-cell">
+                      <button
+                        class="edit-btn"
+                        onclick="window.open('../edit-customer/edit-customer.html')"
+                      >
+                        Edit
+                      </button>
+                      <button class="delete-btn">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="name-cell">
+                      <img
+                        src="../assets/images/customer-2.jpg"
+                        alt="Manuel Labor"
+                        class="customer-img"
+                      />
+                      <p>Manuel Labor</p>
+                    </div>
+                  </td>
+                  <td>300</td>
+                  <td>
+                    <div class="action-cell">
+                      <button
+                        class="edit-btn"
+                        onclick="window.open('../edit-customer/edit-customer.html')"
+                      >
+                        Edit
+                      </button>
+                      <button class="delete-btn">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="name-cell">
+                      <img
+                        src="../assets/images/customer-3.jpg"
+                        alt="Jack Armanda"
+                        class="customer-img"
+                      />
+                      <p>Jack Armanda</p>
+                    </div>
+                  </td>
+                  <td>260</td>
+                  <td>
+                    <div class="action-cell">
+                      <button
+                        class="edit-btn"
+                        onclick="window.open('../edit-customer/edit-customer.html')"
+                      >
+                        Edit
+                      </button>
+                      <button class="delete-btn">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="name-cell">
+                      <img
+                        src="../assets/images/customer-4.jpg"
+                        alt="Alicia Seirra"
+                        class="customer-img"
+                      />
+                      <p>Alicia Seirra</p>
+                    </div>
+                  </td>
+                  <td>450</td>
+                  <td>
+                    <div class="action-cell">
+                      <button
+                        class="edit-btn"
+                        onclick="window.open('../edit-customer/edit-customer.html')"
+                      >
+                        Edit
+                      </button>
+                      <button class="delete-btn">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

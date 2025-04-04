@@ -75,7 +75,7 @@ body {
 }
 
 
-.user-card {
+.product-card {
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -89,8 +89,11 @@ body {
     overflow: hidden;
 }
 
+.product-card > h2 {
+    font-size: 1.75em;
+}
 
-.profile-pic {
+.product-pic {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +101,11 @@ body {
     margin-bottom: 20px;
 }
 
-.profile-pic img {
+.product-card h1 {
+    font-size: 1.5em;
+}
+
+.product-pic img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -108,11 +115,11 @@ body {
     margin-top: 16px;
 }
 
-.profile-pic input {
+.product-pic input {
     display: none;
 }
 
-.profile-pic label {
+.product-pic label {
     background-color: #ff7f0e;
     color: white;
     padding: 8px 12px;
@@ -122,11 +129,12 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.profile-pic label:hover {
+.product-pic label:hover {
     background-color: #e66900;
 }
 
-.user-form {
+.product-form {
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -158,6 +166,7 @@ body {
     border-radius: 5px;
     outline: none;
 }
+
 
 .save-btn {
     background-color: #ff7f0e;
