@@ -22,6 +22,8 @@ html {
 }
 
 .nav-bar {
+  position: fixed;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -96,6 +98,7 @@ h1 {
   justify-content: space-between;
   padding: 50px;
   background-color: #fff9e6;
+  margin-top: 3em;
 }
 
 .card1 {
